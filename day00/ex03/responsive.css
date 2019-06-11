@@ -1,0 +1,104 @@
+
+table {
+   border-collapse: collapse;
+   width: 100%;
+    height: 100%;
+    margin: 3px 3px 3px 3px;
+}
+
+img {
+  object-fit: contain;
+}
+
+#Tit {
+  color: #008080;
+   margin-top: 15px;
+}
+
+td {
+ width: 5%;
+ height: 3%;
+ border: 1px solid #e6ffb3;
+    padding: 3px 3px 3px 3px;
+}
+
+h2
+{
+  /* text-align: center; */
+  font-size: 2vw;
+  margin: 0;
+  text-align: center;
+  color: #ffffb3;
+}
+p
+{
+  margin: 0;
+  font-size: 1vw;
+}
+p.nr_upp
+{
+  margin-right: 2px;
+  text-align: right;
+  color: #003300;
+  font-variant: small-caps;
+
+}
+p.nr_bot
+{
+  text-align: left;
+  color:#004d00;
+  font-variant: small-caps;
+}
+td.color_1
+{
+   background-color:#2d8659;
+}
+.color_2
+{
+  background-color: #009973;
+}
+td.color_3
+{
+  background-color:#39ac39;
+}
+.color_6
+{
+  background-color: #00e6b8;
+}
+.color_5
+{
+  background-color: #66ff99;
+}
+.color_4
+{
+  background-color: #99e600;
+}
+.color_7
+{
+  background-color:#00cccc;
+}
+.color_8
+{
+  background-color:#009999;
+}
+
+
+body{
+
+  width: 100%;
+  height: 100%;
+	background-image: url('https://www.xmple.com/wallpaper/white-gradient-linear-blue-1920x1080-c2-afeeee-ffffff-a-255-f-14.svg');
+  background-size: 160%;
+
+  margin-right: 5px;
+  margin-left: 0px;
+  overflow: hidden;
+  margin-bottom: 0;
+
+  background-repeat: no-repeat;
+  position: absolute;
+
+}
+#hidden{
+ border-style: hidden;
+}
