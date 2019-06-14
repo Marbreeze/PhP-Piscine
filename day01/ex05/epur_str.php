@@ -1,5 +1,9 @@
 #!/usr/bin/php
 <?php
+	if ($argc != 2)
+	{
+		exit();
+	}
     $arr = trim($argv[1]);
     $i = 0;
     while($i < strlen($arr))

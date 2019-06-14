@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
     function    ft_is_sort($tab)
     {
@@ -7,9 +6,10 @@
         $i = -1;
         while(++$i < count($tab))
         {
-            if(array_diff($tab,$cp_tab))
-                return (1);
+            // if(array_diff($tab,$cp_tab))
+            if ($tab[$i] != $cp_tab[$i])
+                return (0);
         }
-        return (0);
+        return (1);
     }
 ?>

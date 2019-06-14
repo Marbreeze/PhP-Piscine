@@ -1,8 +1,9 @@
+#!/usr/bin/php
 <?php
 echo "Enter a number: ";
-$input = fgets(STDIN);
-$input = trim($input);
-if(is_numeric($input))
+$input = fgets(STDIN); //get input from std
+$input = trim($input); //sterge spatiul
+if(is_numeric($input)) // verifica daca e numeric sau nu
 {
   if($input % 2 == 0)
     echo ("The number $input is Even\n");

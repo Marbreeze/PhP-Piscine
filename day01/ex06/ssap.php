@@ -1,9 +1,8 @@
 #!/usr/bin/php
-
 <?php
-
-    $n_arr = [];
-    $i = 1;
+	$argv[1] = trim($argv[1]);
+    $n_arr = preg_split("/[\s]+/", $argv[1]);;
+    $i = 2;
     while($i < $argc)
     {
         $argv[$i] = trim($argv[$i]);
@@ -12,17 +11,12 @@
         while(++$index < count($res))
           array_push($n_arr, $res[$index]);
         $i++;
-        // echo "res == ";
-        // print_r($res);
-        // echo "n_arr == ";
-        // print_r($n_arr);
-
     }
     sort($n_arr);
     $i = 0;
     while($i < count($n_arr))
     {
-        echo ($n_arr[$i]." ");
+        echo ($n_arr[$i]."\n");
         $i++;
     }
 

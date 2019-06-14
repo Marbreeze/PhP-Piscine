@@ -1,3 +1,4 @@
+#!/usr/bin/php
 <?php
 $index = 1;
 while($index <= 1000)
