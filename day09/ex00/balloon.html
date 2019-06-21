@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="circle">
+
+    </div>
+
+    <style>
+    #circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 10000px;
+    background: red;
+    margin-top: 500px;
+    margin-left: 550px;
+    }
+
+    </style>
+
+    <script>
+        var circule = document.getElementById("circle");
+        var color = ["red", "green", "blue"];
+        var diameter = 200;
+        var currcolor = 0;
+        
+        var setcolor = function(){
+            if (currcolor < 0)
+                currcolor = 2;
+            else if (currcolor > 2)
+                currcolor = 0;
+            circle.style.background = color[currcolor];
+        }
+
+        var setsize = function(){
+            if (diameter < 200 || diameter > 420)
+                diameter = 200;
+            circle.style.width = diameter + "px";
+            circle.style.height = diameter + "px";
+        }
+
+        circle.addEventListener("click", function(){
+            diameter += 10;
+            currcolor++;
+            setsize();
+            setcolor();
+        });
+
+        circle.addEventListener("mouseleave", function(){
+            diameter -= 5;
+            currcolor--;
+            setsize();
+            setcolor();
+        });
+       
+    </script>
+
+
+</body>
+</html>
+

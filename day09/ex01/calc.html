@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <input id="box1" type="text" value="" placeholder="set a number">
+
+    <select  id="sign">
+        <option >+</option>
+        <option >-</option>
+        <option >*</option>
+        <option >/</option>
+        <option >%</option>
+    </select>
+
+    <input id="box2" type="text" value="" placeholder="set a number">
+
+    <button id="button" onclick="myfunction()" type="submit">Try me!</button>
+
+    <script>
+        //setTimeout (function(){ alert("Please, use me"); }, 30000);
+        
+        setInterval(function(){
+            alert("Please, use me");
+        }, 30000)
+        function myfunction(){
+        var a = document.getElementById("box1").value;
+        var b = document.getElementById("sign").value;
+        var c = document.getElementById("box2").value;
+        a = parseInt(a);
+        c = parseInt(c);
+        
+        if (a < 0 || c < 0){
+            alert("ERROR :(");
+            console.log("ERROR :(");
+            return ;
+        }
+        if ((b === "/" || b === "%") && (c == 0)){
+            alert("It’s over 9000!");
+            console.log("It’s over 9000!");
+            return ;
+        }
+        if (b === "+"){
+            alert(a + c);
+            console.log(a + c);
+        }        
+        if (b === "-"){
+            alert(a - c);
+            console.log(a - c);
+        }
+        if (b === "*"){
+            alert(a * c);
+            console.log(a * c);
+        }
+        if (b === "/"){
+            alert(a / c);
+            console.log(a / c);
+        }
+        if (b === "%"){
+            alert(a % c);
+            console.log(a % c);
+        }
+        }
+    </script>
+</body>
+</html>
